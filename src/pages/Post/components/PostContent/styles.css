@@ -1,0 +1,27 @@
+.ContentContainer {
+  display: flex;
+  flex-direction: column;
+  width: 86.4rem;
+  margin: 0 auto;
+}
+.ContentContainer p {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 3.2rem;
+  gap: 2.4rem;
+  color: #afc2d4;
+  font-size: 1.6rem;
+  line-height: 160%;
+}
+.ContentContainer a {
+  display: block;
+  color: #3294f8;
+}
+.ContentContainer code {
+  display: block;
+  background-color: #112131;
+  padding: 1.6rem;
+  font-family: "Fira Code";
+  border-radius: 2px;
+  margin-bottom: 2rem;
+}

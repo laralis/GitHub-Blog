@@ -1,0 +1,70 @@
+.postStatsContainer {
+  display: flex;
+  width: 86.4rem;
+  flex-direction: column;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  background-color: #0b1b2b;
+  border-radius: 10px;
+  margin-bottom: -50px;
+}
+.postStatsContainer header,
+.postStatsContainer h2,
+.postStatsContainer .stats {
+  padding-inline: 3.2rem;
+}
+.backHome {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  padding-top: 3.2rem;
+  color: #3294f8;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 160%;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.goGit {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  padding-top: 3.2rem;
+  color: #3294f8;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 160%;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.goGit:hover,.backHome:hover {
+  text-decoration: underline;
+}
+.iconGit,
+.iconBack {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.postStatsContainer h2 {
+  color: #e7edf4;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 0.8rem;
+}
+.stats {
+  display: flex;
+  gap: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+.stats span {
+  color: #7b96b2;
+  font-size: 1.6rem;
+  line-height: 160%;
+}

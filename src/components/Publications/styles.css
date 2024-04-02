@@ -1,0 +1,21 @@
+.listPublications {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  width: 86.4rem;
+  gap: 3.2rem;
+  margin-bottom: 4.8rem;
+}
+.listPublications header {
+  display: flex;
+  justify-content: space-between;
+}
+.listPublications header h2 {
+  color: #e7edf4;
+}
+.listPublications header span {
+  color: #7b96b2;
+}
+.listPublications p {
+  color: #afc2d4;
+}

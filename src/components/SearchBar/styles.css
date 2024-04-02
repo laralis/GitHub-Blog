@@ -1,0 +1,37 @@
+.userPublications {
+  margin: 0 auto;
+  width: 86.4rem;
+  margin-bottom: 4.8rem;
+}
+.userPublications input {
+  width: 86.4rem;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: 1px solid #1c2f41;
+  background-color: #040f1a;
+  font-size: 1.6rem;
+  line-height: 160%;
+  color: #3a536b;
+}
+.userPublications input:focus {
+  border: 1px solid #3294F8;
+  outline: none;
+}
+.publications {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.publications h2 {
+  color: #c4d4e3;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.publications span {
+  color: #7b96b2;
+  font-size: 1.4rem;
+  line-height: 160%;
+}

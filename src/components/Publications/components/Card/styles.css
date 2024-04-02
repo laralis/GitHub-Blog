@@ -1,0 +1,41 @@
+.cardPost {
+  width: 41.6rem;
+  border-radius: 10px;
+  background-color: #112131;
+  cursor: pointer;
+}
+.cardPost:hover {
+  border: 2px solid #3a536b;
+}
+.cardPost header,
+.cardPost p {
+  padding-inline: 3.2rem;
+}
+.cardPost header {
+  padding-top: 3.2rem;
+}
+.cardPost header h2 {
+  color: #e7edf4;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 160%;
+  width: 28.3rem;
+  margin-bottom: 2rem;
+}
+.cardPost header span {
+  color: #7b96b2;
+  font-size: 1.4rem;
+  line-height: 160%;
+}
+.cardPost p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 160%;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  color: #afc2d4;
+}
+.cardPost .text {
+  padding-bottom: 3.2rem;
+}

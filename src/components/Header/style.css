@@ -1,0 +1,21 @@
+.cover{
+  height: 29.6rem;
+  background-color: #0B1B2B;
+  background: linear-gradient();
+  width: 100dvw;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+
+}
+.cover .logo{
+  width: 14.8rem;
+  height: 9.8rem;
+}
+.effect{
+  width: 40.9rem;
+  height: 18.8rem;
+}
+.effect:first-child{
+  transform: scaleX(-1);
+}

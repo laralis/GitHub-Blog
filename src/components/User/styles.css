@@ -1,0 +1,68 @@
+.userCard {
+  display: flex;
+  width: 86.4rem;
+  background-color: #0b1b2b;
+  border-radius: 10px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  box-shadow: 0px 2px 28px 0px rgba(0, 0, 0, 0.20);
+
+}
+.userCard .userPhoto {
+  width: 14.8rem;
+  height: 14.8rem;
+  border-radius: 8px;
+  margin: 32px 32px 32px 40px;
+}
+.headerDescription {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+.headerDescription h2 {
+  color: #e7edf4;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 0.8rem;
+}
+.headerDescription a {
+  color: #3294f8;
+  margin-right: 3.2rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 160%;
+  text-decoration: none;
+}
+.headerDescription a:hover {
+  text-decoration: underline;
+}
+.headerDescription .iconGit {
+  width: 1.2rem;
+  height: 1.2rem;
+  padding-left: 0.8rem;
+}
+.userDescription p {
+  color: #afc2d4;
+  font-size: 1.6rem;
+  line-height: 160%;
+  margin-bottom: 2.4rem;
+}
+.userStats {
+  display: flex;
+  gap: 2.4rem;
+
+}
+.userStats span {
+  color: #c4d4e3;
+  font-size: 1.6rem;
+  line-height: 160%;
+}
+.icon {
+  color: #3a536b;
+  height: 1.8rem;
+  width: 1.8rem;
+  padding-right: 0.8rem;
+}
