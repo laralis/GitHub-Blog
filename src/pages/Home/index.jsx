@@ -6,7 +6,7 @@ export function Home() {
   return (
     <div>
       <Header />
-      <User />
+      <User/>
       <SearchBar />
       <Publications />
     </div>

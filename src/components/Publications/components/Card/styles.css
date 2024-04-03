@@ -1,3 +1,6 @@
+a {
+  text-decoration: none;
+}
 .cardPost {
   width: 41.6rem;
   border-radius: 10px;
@@ -13,6 +16,8 @@
 }
 .cardPost header {
   padding-top: 3.2rem;
+  display: flex;
+  align-items: start;
 }
 .cardPost header h2 {
   color: #e7edf4;
@@ -23,9 +28,12 @@
   margin-bottom: 2rem;
 }
 .cardPost header span {
+  display: flex;
   color: #7b96b2;
   font-size: 1.4rem;
   line-height: 160%;
+  text-wrap: nowrap;
+  padding-left: 0.5rem;
 }
 .cardPost p {
   overflow: hidden;

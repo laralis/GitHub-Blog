@@ -6,19 +6,22 @@ import {
   faArrowUpRightFromSquare,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-
+import { useEffect, useState } from "react";
 
 export function User() {
-  const userImg = "https://www.github.com/josepholiveira.png";
-
-
+  const [user, setUser] = useState({});
+  useEffect(() => {
+    fetch("https://api.github.com/users/josepholiveira")
+      .then((response) => response.json())
+      .then((data) => setUser(data));
+  });
   return (
     <div className="userCard">
-      <img src={userImg} alt="Foto de perfil" className="userPhoto" />
+      <img src={user.avatar_url} alt="Foto de perfil" className="userPhoto" />
       <div className="userDescription">
         <div className="headerDescription">
-          <h2>Joseph Oliveira</h2>
-          <a href="https://www.github.com/josepholiveira" target="_blank">
+          <h2>{user.name}</h2>
+          <a href={user.html_url} target="_blank">
             github
             <FontAwesomeIcon
               icon={faArrowUpRightFromSquare}
@@ -27,22 +30,20 @@ export function User() {
           </a>
         </div>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ab
-          voluptas delectus officia recusandae, cum iste dolore repellendus nisi
-          in nemo ea.
+          {user.bio}
         </p>
         <div className="userStats">
           <span>
             <FontAwesomeIcon icon={faGithub} className="icon" />
-            josepholiveira
+            {user.login}
           </span>
           <span>
             <FontAwesomeIcon icon={faBuilding} className="icon" />
-            Rocketseat
+            {user.company}
           </span>
           <span>
             <FontAwesomeIcon icon={faUserGroup} className="icon" />
-            32 seguidores
+            {user.followers} seguidores
           </span>
         </div>
       </div>

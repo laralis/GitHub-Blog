@@ -7,14 +7,15 @@ import {
   faComment,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { Link } from 'react-router-dom';
 export function PostStats() {
   return (
     <div className="postStatsContainer">
       <header>
-        <a href="" className="backHome">
+        <Link to={"/"}  className="backHome">
           <FontAwesomeIcon icon={faAngleLeft} className="iconBack" />
           Voltar
-        </a>
+        </Link>
         <a href="" target="_blank" className="goGit">
           Ver no github
           <FontAwesomeIcon
