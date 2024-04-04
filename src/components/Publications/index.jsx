@@ -1,32 +1,35 @@
-import { useEffect, useState } from "react";
 import { Card } from "./components/Card";
 import "./styles.css";
-export function Publications() {
-  const [issues, setIssues] = useState([]);
-
-  useEffect(() => {
-    async function getApi() {
-      const url = await fetch(
-        "https://api.github.com/repos/rocketseat-education/reactjs-github-blog-challenge/issues"
-      );
-      const response = await url.json();
-
-      setIssues(response);
-    }
-    getApi();
-  }, []);
+export function Publications({ results, issues }) {
   return (
     <div className="listPublications">
-      {issues.map((issue) => {
-        return (
-          <Card
-            key={issue.id}
-            title={issue.title}
-            body={issue.body}
-            data={issue.updated_at}
-          />
-        );
-      })}
+      {results.length == 0
+        ? issues.map((issues) => {
+            return (
+              <Card
+                key={issues.id}
+                title={issues.title}
+                body={issues.body}
+                data={issues.updated_at}
+                comments={issues.comments}
+                url={issues.html_url}
+                user={issues.user.login}
+              />
+            );
+          })
+        : results.map((result) => {
+            return (
+              <Card
+                key={result.id}
+                title={result.title}
+                body={result.body}
+                data={result.updated_at}
+                comments={result.comments}
+                url={result.html_url}
+                user={result.user.login}
+              />
+            );
+          })}
     </div>
   );
 }

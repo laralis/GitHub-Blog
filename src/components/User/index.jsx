@@ -11,7 +11,9 @@ import { useEffect, useState } from "react";
 export function User() {
   const [user, setUser] = useState({});
   useEffect(() => {
-    fetch("https://api.github.com/users/josepholiveira")
+    fetch(
+      "https://api.github.com/users/josepholiveira"
+    )
       .then((response) => response.json())
       .then((data) => setUser(data));
   });
@@ -29,9 +31,7 @@ export function User() {
             />
           </a>
         </div>
-        <p>
-          {user.bio}
-        </p>
+        <p>{user.bio}</p>
         <div className="userStats">
           <span>
             <FontAwesomeIcon icon={faGithub} className="icon" />
